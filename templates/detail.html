@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+        a-scene {
+            height: 600px;
+            width: 100%;
+        }
+
+        #main-image {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+
+<h1>{{ card.title }}</h1>
+<h1>{{ card.user.username }}</h1>
+
+
+<a-scene embedded>
+    <a-sky src="{{ card.img.url }}"></a-sky>
+</a-scene>
+
+
+</body>
+</html>
